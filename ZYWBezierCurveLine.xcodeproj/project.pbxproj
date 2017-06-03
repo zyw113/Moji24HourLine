@@ -15,6 +15,15 @@
 		4262CA2F1ED9236100C950FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4262CA2D1ED9236100C950FA /* LaunchScreen.storyboard */; };
 		4262CA3A1ED9236100C950FA /* ZYWBezierCurveLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262CA391ED9236100C950FA /* ZYWBezierCurveLineTests.m */; };
 		4262CA451ED9236100C950FA /* ZYWBezierCurveLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262CA441ED9236100C950FA /* ZYWBezierCurveLineUITests.m */; };
+		4262CA541ED9245200C950FA /* ZYWSlipLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262CA531ED9245200C950FA /* ZYWSlipLineView.m */; };
+		4262CA6E1ED94C8900C950FA /* UIBezierPath+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262CA671ED94C8900C950FA /* UIBezierPath+Draw.m */; };
+		4262CA701ED94C8900C950FA /* UIColor+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262CA6B1ED94C8900C950FA /* UIColor+YW.m */; };
+		4262CA711ED94C8900C950FA /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262CA6D1ED94C8900C950FA /* UIView+Extension.m */; };
+		4263D3921EDFABCE000C839A /* ZYWLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4263D3911EDFABCE000C839A /* ZYWLineModel.m */; };
+		4263D3951EDFACC3000C839A /* ZYWWetherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4263D3941EDFACC3000C839A /* ZYWWetherModel.m */; };
+		4263D3981EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4263D3971EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.m */; };
+		4263D39C1EDFB821000C839A /* ZYWTemperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4263D39B1EDFB821000C839A /* ZYWTemperView.m */; };
+		6DF60022A4F3570A1869D4B8 /* libPods-ZYWBezierCurveLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC6729CB1645337B04CE3E3 /* libPods-ZYWBezierCurveLine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BECEF2B30C09A880E2ED342 /* Pods-ZYWBezierCurveLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYWBezierCurveLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYWBezierCurveLine/Pods-ZYWBezierCurveLine.debug.xcconfig"; sourceTree = "<group>"; };
 		4262CA1C1ED9236100C950FA /* ZYWBezierCurveLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYWBezierCurveLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4262CA201ED9236100C950FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4262CA221ED9236100C950FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,25 @@
 		4262CA401ED9236100C950FA /* ZYWBezierCurveLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYWBezierCurveLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4262CA441ED9236100C950FA /* ZYWBezierCurveLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYWBezierCurveLineUITests.m; sourceTree = "<group>"; };
 		4262CA461ED9236100C950FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4262CA521ED9245200C950FA /* ZYWSlipLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWSlipLineView.h; sourceTree = "<group>"; };
+		4262CA531ED9245200C950FA /* ZYWSlipLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWSlipLineView.m; sourceTree = "<group>"; };
+		4262CA5E1ED9274000C950FA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4262CA661ED94C8900C950FA /* UIBezierPath+Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Draw.h"; sourceTree = "<group>"; };
+		4262CA671ED94C8900C950FA /* UIBezierPath+Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Draw.m"; sourceTree = "<group>"; };
+		4262CA6A1ED94C8900C950FA /* UIColor+YW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YW.h"; sourceTree = "<group>"; };
+		4262CA6B1ED94C8900C950FA /* UIColor+YW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YW.m"; sourceTree = "<group>"; };
+		4262CA6C1ED94C8900C950FA /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		4262CA6D1ED94C8900C950FA /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		4263D3901EDFABCE000C839A /* ZYWLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWLineModel.h; sourceTree = "<group>"; };
+		4263D3911EDFABCE000C839A /* ZYWLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWLineModel.m; sourceTree = "<group>"; };
+		4263D3931EDFACC3000C839A /* ZYWWetherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWWetherModel.h; sourceTree = "<group>"; };
+		4263D3941EDFACC3000C839A /* ZYWWetherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWWetherModel.m; sourceTree = "<group>"; };
+		4263D3961EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LxThroughPointsBezier.h"; sourceTree = "<group>"; };
+		4263D3971EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LxThroughPointsBezier.m"; sourceTree = "<group>"; };
+		4263D39A1EDFB821000C839A /* ZYWTemperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWTemperView.h; sourceTree = "<group>"; };
+		4263D39B1EDFB821000C839A /* ZYWTemperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWTemperView.m; sourceTree = "<group>"; };
+		83E3BFA4F78702D23F7E13D2 /* Pods-ZYWBezierCurveLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYWBezierCurveLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYWBezierCurveLine/Pods-ZYWBezierCurveLine.release.xcconfig"; sourceTree = "<group>"; };
+		9CC6729CB1645337B04CE3E3 /* libPods-ZYWBezierCurveLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYWBezierCurveLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF60022A4F3570A1869D4B8 /* libPods-ZYWBezierCurveLine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +115,8 @@
 				4262CA381ED9236100C950FA /* ZYWBezierCurveLineTests */,
 				4262CA431ED9236100C950FA /* ZYWBezierCurveLineUITests */,
 				4262CA1D1ED9236100C950FA /* Products */,
+				803C52166A7F8495C556A01C /* Pods */,
+				749D353C4D67B3450DA97BA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +133,11 @@
 		4262CA1E1ED9236100C950FA /* ZYWBezierCurveLine */ = {
 			isa = PBXGroup;
 			children = (
+				4263D3991EDFB7DF000C839A /* View */,
+				4263D38F1EDFABCE000C839A /* Model */,
+				4262CA651ED94C8900C950FA /* Category */,
+				4262CA521ED9245200C950FA /* ZYWSlipLineView.h */,
+				4262CA531ED9245200C950FA /* ZYWSlipLineView.m */,
 				4262CA221ED9236100C950FA /* AppDelegate.h */,
 				4262CA231ED9236100C950FA /* AppDelegate.m */,
 				4262CA251ED9236100C950FA /* ViewController.h */,
@@ -118,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				4262CA201ED9236100C950FA /* main.m */,
+				4262CA5E1ED9274000C950FA /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +178,58 @@
 			path = ZYWBezierCurveLineUITests;
 			sourceTree = "<group>";
 		};
+		4262CA651ED94C8900C950FA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4263D3961EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.h */,
+				4263D3971EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.m */,
+				4262CA661ED94C8900C950FA /* UIBezierPath+Draw.h */,
+				4262CA671ED94C8900C950FA /* UIBezierPath+Draw.m */,
+				4262CA6A1ED94C8900C950FA /* UIColor+YW.h */,
+				4262CA6B1ED94C8900C950FA /* UIColor+YW.m */,
+				4262CA6C1ED94C8900C950FA /* UIView+Extension.h */,
+				4262CA6D1ED94C8900C950FA /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4263D38F1EDFABCE000C839A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4263D3901EDFABCE000C839A /* ZYWLineModel.h */,
+				4263D3911EDFABCE000C839A /* ZYWLineModel.m */,
+				4263D3931EDFACC3000C839A /* ZYWWetherModel.h */,
+				4263D3941EDFACC3000C839A /* ZYWWetherModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4263D3991EDFB7DF000C839A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4263D39A1EDFB821000C839A /* ZYWTemperView.h */,
+				4263D39B1EDFB821000C839A /* ZYWTemperView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		749D353C4D67B3450DA97BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC6729CB1645337B04CE3E3 /* libPods-ZYWBezierCurveLine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		803C52166A7F8495C556A01C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BECEF2B30C09A880E2ED342 /* Pods-ZYWBezierCurveLine.debug.xcconfig */,
+				83E3BFA4F78702D23F7E13D2 /* Pods-ZYWBezierCurveLine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4262CA491ED9236100C950FA /* Build configuration list for PBXNativeTarget "ZYWBezierCurveLine" */;
 			buildPhases = (
+				C47CA0E372C949EAB9F4E784 /* [CP] Check Pods Manifest.lock */,
 				4262CA181ED9236100C950FA /* Sources */,
 				4262CA191ED9236100C950FA /* Frameworks */,
 				4262CA1A1ED9236100C950FA /* Resources */,
+				82AB24EE863782CFFFE234D3 /* [CP] Embed Pods Frameworks */,
+				F08E882E0B2A1743FFC5E3D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +300,7 @@
 				TargetAttributes = {
 					4262CA1B1ED9236100C950FA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3YZNFSGQ2T;
 						ProvisioningStyle = Automatic;
 					};
 					4262CA341ED9236100C950FA = {
@@ -268,14 +362,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82AB24EE863782CFFFE234D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYWBezierCurveLine/Pods-ZYWBezierCurveLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C47CA0E372C949EAB9F4E784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F08E882E0B2A1743FFC5E3D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYWBezierCurveLine/Pods-ZYWBezierCurveLine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4262CA181ED9236100C950FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4262CA711ED94C8900C950FA /* UIView+Extension.m in Sources */,
+				4263D3981EDFAF19000C839A /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				4262CA271ED9236100C950FA /* ViewController.m in Sources */,
+				4262CA6E1ED94C8900C950FA /* UIBezierPath+Draw.m in Sources */,
+				4263D39C1EDFB821000C839A /* ZYWTemperView.m in Sources */,
+				4262CA541ED9245200C950FA /* ZYWSlipLineView.m in Sources */,
+				4263D3951EDFACC3000C839A /* ZYWWetherModel.m in Sources */,
+				4263D3921EDFABCE000C839A /* ZYWLineModel.m in Sources */,
 				4262CA241ED9236100C950FA /* AppDelegate.m in Sources */,
 				4262CA211ED9236100C950FA /* main.m in Sources */,
+				4262CA701ED94C8900C950FA /* UIColor+YW.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +511,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYWBezierCurveLine/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -408,6 +560,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYWBezierCurveLine/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -424,8 +578,10 @@
 		};
 		4262CA4A1ED9236100C950FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BECEF2B30C09A880E2ED342 /* Pods-ZYWBezierCurveLine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3YZNFSGQ2T;
 				INFOPLIST_FILE = ZYWBezierCurveLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zyw113.ZYWBezierCurveLine;
@@ -435,8 +591,10 @@
 		};
 		4262CA4B1ED9236100C950FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E3BFA4F78702D23F7E13D2 /* Pods-ZYWBezierCurveLine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3YZNFSGQ2T;
 				INFOPLIST_FILE = ZYWBezierCurveLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zyw113.ZYWBezierCurveLine;
@@ -509,6 +667,7 @@
 				4262CA4B1ED9236100C950FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4262CA4C1ED9236100C950FA /* Build configuration list for PBXNativeTarget "ZYWBezierCurveLineTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +676,7 @@
 				4262CA4E1ED9236100C950FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4262CA4F1ED9236100C950FA /* Build configuration list for PBXNativeTarget "ZYWBezierCurveLineUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +685,7 @@
 				4262CA511ED9236100C950FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

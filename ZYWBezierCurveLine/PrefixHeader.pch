@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  ZYWBezierCurveLine
+//
+//  Created by 张有为 on 2017/5/27.
+//  Copyright © 2017年 zyw113. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "Masonry.h"
+#import "ZYWLineModel.h"
+#import "UIBezierPath+Draw.h"
+#import "UIColor+YW.h"
+#import "UIView+Extension.h"
+
+#define DEVICE_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define DEVICE_WIDTH [UIScreen mainScreen].bounds.size.width
+#define widthradio DEVICE_WIDTH/375
+#define heightradio DEVICE_HEIGHT/667
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
