@@ -13,6 +13,7 @@
 
 #define timeLayerHeight 20
 #define tempViewHeight 40
+#define RADIUS 3
 
 @interface ZYWSlipLineView ()<UIScrollViewDelegate>
 
@@ -69,7 +70,7 @@
 -(void)drawLineLayer
 {
     ZYWLineModel *model = self.modelPostionArray.firstObject;
-    _tempView.centerX = model.xPosition;
+    _tempView.centerX = model.xPosition + RADIUS;
     _tempView.y = model.yPosition - _tempView.height - 10 ;
  
     _tempView.date = _dataArray[[_indexArray .firstObject integerValue]].temper;
@@ -109,7 +110,7 @@
         CAShapeLayer *subLayer = [[CAShapeLayer alloc] init];
         subLayer.fillColor = [UIColor whiteColor].CGColor;
         UIBezierPath *circle = [UIBezierPath bezierPath];
-        [circle addArcWithCenter:CGPointMake(model.xPosition, model.yPosition) radius:3
+        [circle addArcWithCenter:CGPointMake(model.xPosition, model.yPosition) radius:RADIUS
                       startAngle:0
                         endAngle:2*M_PI
                        clockwise:YES];
@@ -232,7 +233,7 @@
     
     self.alpha = 1;
     CGFloat y = [self getLableyAxisWithX:x] - _tempView.height - 10 > 0 ? [self getLableyAxisWithX:x] - _tempView.height - 10 : 0;
-    _tempView.centerX = x;
+    _tempView.centerX = x + RADIUS;
     _tempView.y = y;
     _tempView.date = _dataArray[_currentIndex].temper;
     _tempView.imageName = _dataArray[_imageIndex].imageCode;
