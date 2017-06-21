@@ -20,5 +20,6 @@
 @property (nonatomic,assign) CGFloat bottomMargin;
 @property (nonatomic,strong) NSMutableArray<ZYWWetherModel*>*dataArray;
 
--(void)stockFill;
+- (void)stockFill;
+
 @end

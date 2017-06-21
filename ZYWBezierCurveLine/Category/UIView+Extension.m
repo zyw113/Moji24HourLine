@@ -10,82 +10,85 @@
 
 @implementation UIView (Extension)
 
--(void)setX:(CGFloat)x
+- (void)setX:(CGFloat)x
 {
     CGRect tempF = self.frame;
     tempF.origin.x = x;
     self.frame = tempF;
 }
 
--(CGFloat)x
+- (CGFloat)x
 {
     return self.frame.origin.x;
 }
 
--(void)setY:(CGFloat)y{
+- (void)setY:(CGFloat)y{
     CGRect tempF = self.frame;
     tempF.origin.y = y ;
     self.frame = tempF;
 }
 
--(CGFloat)y
+- (CGFloat)y
 {
     return self.frame.origin.y;
 }
 
--(void)setWidth:(CGFloat)width
+- (void)setWidth:(CGFloat)width
 {
     CGRect tempF = self.frame;
     tempF.size.width = width;
     self.frame = tempF;
 }
 
--(void)setCenterX:(CGFloat)centerX
+- (void)setCenterX:(CGFloat)centerX
 {
     CGPoint tempF = self.center;
     tempF.x = centerX;
     self.center = tempF;
 }
--(CGFloat)centerX
+
+- (CGFloat)centerX
 {
     return self.center.x;
 }
 
--(void)setCenterY:(CGFloat)centerY
+- (void)setCenterY:(CGFloat)centerY
 {
     CGPoint tempF = self.center;
     tempF.y = centerY;
     self.center = tempF;
 }
--(CGFloat)centerY
+
+- (CGFloat)centerY
 {
     return self.center.y;
 }
 
--(CGFloat)width
+- (CGFloat)width
 {
     return self.frame.size.width;
 }
 
--(void)setHeight:(CGFloat)height
+- (void)setHeight:(CGFloat)height
 {
     CGRect tempF = self.frame;
     tempF.size.height = height;
     self.frame = tempF;
 }
 
--(CGFloat)height
+- (CGFloat)height
 {
     return self.frame.size.height;
 }
 
--(void)setSize:(CGSize)size
+- (void)setSize:(CGSize)size
 {
     CGRect tempF = self.frame;
     tempF.size = size;
     self.frame = tempF;
 }
--(CGSize)size
+
+- (CGSize)size
 {
     return self.frame.size;
 }

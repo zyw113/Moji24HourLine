@@ -23,9 +23,12 @@
 @property (nonatomic,strong) CAShapeLayer *circleLayer;
 @property (nonatomic,strong) CAShapeLayer *timerLayer;
 @property (nonatomic,strong) ZYWTemperView *tempView;
-@property (nonatomic,assign) NSInteger currentIndex;//当前模型下标
-@property (nonatomic,assign) NSInteger imageIndex;//当前显示的image下标
-@property (nonatomic,strong) NSMutableArray *indexArray;//记录所需绘制图片的下标
+/**当前模型下标**/
+@property (nonatomic,assign) NSInteger currentIndex;
+/**当前显示的image下标**/
+@property (nonatomic,assign) NSInteger imageIndex;
+/**记录所需绘制图片的下标**/
+@property (nonatomic,strong) NSMutableArray *indexArray;
 
 @end
 
@@ -33,7 +36,7 @@
 
 #pragma mark setter
 
--(NSMutableArray*)modelPostionArray
+- (NSMutableArray*)modelPostionArray
 {
     if (!_modelPostionArray)
     {
@@ -42,7 +45,7 @@
     return _modelPostionArray;
 }
 
--(NSMutableArray*)indexArray
+- (NSMutableArray*)indexArray
 {
     if (!_indexArray)
     {
@@ -53,7 +56,7 @@
 
 #pragma mark draw
 
--(void)drawRect:(CGRect)rect
+- (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
     if (self.modelPostionArray.count)
@@ -67,7 +70,7 @@
 /**
  绘制曲线
  */
--(void)drawLineLayer
+- (void)drawLineLayer
 {
     ZYWLineModel *model = self.modelPostionArray.firstObject;
     _tempView.centerX = model.xPosition + RADIUS;
@@ -99,7 +102,7 @@
 /**
  绘制圆点
  */
--(void)drawCircleLayer
+- (void)drawCircleLayer
 {
     self.circleLayer = [CAShapeLayer layer];
     self.circleLayer.fillColor = [[UIColor clearColor] CGColor];
@@ -122,7 +125,7 @@
 /**
  时间
  */
--(void)drawTimerLayer
+- (void)drawTimerLayer
 {
     self.timerLayer = [CAShapeLayer layer];
     self.timerLayer.fillColor = [[UIColor clearColor] CGColor];
@@ -144,7 +147,7 @@
     }];
 }
 
--(void)addWetherImages
+- (void)addWetherImages
 {
     for (NSInteger i = 0;i < _dataArray.count; i++)
     {
@@ -166,7 +169,7 @@
 
 #pragma mark postion
 
--(void)calcuteModelPostion
+- (void)calcuteModelPostion
 {
     __weak typeof(self) this = self;
     [_dataArray enumerateObjectsUsingBlock:^(ZYWWetherModel *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -180,7 +183,7 @@
 
 #pragma mark 运动的view
 
--(void)addTempView
+- (void)addTempView
 {
     _tempView = [[ZYWTemperView alloc] initWithFrame:CGRectMake(0, 0, 80, tempViewHeight)];
     [self.superScrollView addSubview:_tempView];
@@ -188,7 +191,7 @@
 
 #pragma mark scrollViewDelegate
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGSize size = scrollView.contentSize;
     CGFloat x = (_dataArray.count - 1) * self.lineSpace * scrollView.contentOffset.x / (size.width - scrollView.width) + self.leftMargin;
@@ -241,7 +244,7 @@
 
 #pragma mark publicMethod
 
--(void)initConfig
+- (void)initConfig
 {
     self.lineSpace = DEVICE_WIDTH / 10.f ;
     CGFloat  contentWidth = self.lineSpace*(_dataArray.count - 1) + self.leftMargin + self.rightMargin;
@@ -255,7 +258,7 @@
     
     for (ZYWWetherModel *model in _dataArray) {
         self.minY = self.minY < [model.temper integerValue] ? self.minY : [model.temper integerValue];
-        self.maxY = self.maxY >[model.temper integerValue] ? self.maxY : [model.temper integerValue];
+        self.maxY = self.maxY > [model.temper integerValue] ? self.maxY : [model.temper integerValue];
     }
     
     [self calcuteWetherCode];
@@ -266,7 +269,7 @@
 /**
  计算一个区间天气code，相同code的只保留最后一个
  */
--(void)calcuteWetherCode
+- (void)calcuteWetherCode
 {
     for (NSInteger i = 0;i < _dataArray.count; i++)
     {
@@ -300,7 +303,7 @@
 /**
  填充方法
  */
--(void)stockFill
+- (void)stockFill
 {
     [self layoutIfNeeded];
     [self initConfig];
@@ -309,7 +312,7 @@
     [self addWetherImages];
 }
 
--(void)didMoveToSuperview
+- (void)didMoveToSuperview
 {
     [super didMoveToSuperview];
     self.superScrollView = (UIScrollView*)self.superview;
@@ -322,7 +325,7 @@
  @param xAxis x轴坐标
  @return y轴坐标
  */
--(CGFloat)getLableyAxisWithX:(CGFloat)xAxis;
+- (CGFloat)getLableyAxisWithX:(CGFloat)xAxis;
 {
     CGPoint startPoint,endPoint;
     NSInteger index;

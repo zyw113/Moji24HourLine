@@ -10,7 +10,7 @@
 
 @implementation UIBezierPath (Draw)
 
-+(UIBezierPath*)drawLine:(NSMutableArray*)linesArray
++ (UIBezierPath*)drawLine:(NSMutableArray*)linesArray
 {
     UIBezierPath *path = [UIBezierPath bezierPath];
     [linesArray enumerateObjectsUsingBlock:^(ZYWLineModel* obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -27,7 +27,7 @@
     return path;
 }
 
-+(NSMutableArray<__kindof UIBezierPath*>*)drawLines:(NSMutableArray<NSMutableArray*>*)linesArray
++ (NSMutableArray<__kindof UIBezierPath*>*)drawLines:(NSMutableArray<NSMutableArray*>*)linesArray
 {
      NSAssert(0 != linesArray.count && NULL != linesArray, @"传入的数组为nil ,打印结果---->>%@",linesArray);
     

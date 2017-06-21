@@ -21,7 +21,7 @@
 
 @implementation ZYWTemperView
 
--(instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self)
@@ -33,7 +33,7 @@
     return self;
 }
 
--(void)addCirLayer
+- (void)addCirLayer
 {
     self.lineLayer = [CAShapeLayer layer];
     self.lineLayer.strokeColor = [UIColor clearColor].CGColor;
@@ -78,7 +78,7 @@
     self.lineLayer.path = path.CGPath;
 }
 
--(void)addSubview
+- (void)addSubview
 {
     _tempLabel = [UILabel new];
     [self addSubview:_tempLabel];
@@ -99,7 +99,7 @@
     }];
 }
 
--(void)setDate:(NSString *)date
+- (void)setDate:(NSString *)date
 {
     if (_date != date)
     {
@@ -108,7 +108,7 @@
     }
 }
 
--(void)setImageName:(NSString *)imageName
+- (void)setImageName:(NSString *)imageName
 {
     if (_imageName != imageName)
     {
